@@ -60,7 +60,7 @@ function searchRequest(query){
         // 1. 붙잡아올 요소를 변수에 담아준다
         const container = document.querySelector("container");
 
-        const card =
+        const card = document.querySelector("card")
 
     });
 }

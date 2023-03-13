@@ -1,0 +1,13 @@
+.map {
+    display: grid;
+    grid-template-columns: repeat(20, 100px);
+    grid-template-rows: repeat(20, 100px);
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: sienna;
+    border: solid 1px black
+}
