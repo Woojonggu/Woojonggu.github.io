@@ -65,7 +65,7 @@ hr {
 
 .projects article {
     width: 250px;
-    height: 250px;
+    height: 300px;
     padding: 10px;
     background-color: whitesmoke;
 }
@@ -87,12 +87,6 @@ hr {
     display: none;
 }
 
-.project-img {
-    height: 60%;
-    filter: grayscale(1);
-    background-size: cover;
-    background-color: lightgrey;
-}
 
 .projects article:hover {
     border-bottom: solid 2px #f797c7;
