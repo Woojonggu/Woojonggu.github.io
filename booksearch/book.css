@@ -3,25 +3,79 @@
     padding: 0;
 }
 
-h1 {
-    text-align: center;
+a:hover {
+    text-decoration: underline;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: aqua;
+h1{
+    text-align: center;
 }
 
 .search-box{
     width: fit-content;
     margin: auto;
-    
+    margin-bottom: 20px;
 }
 
-.result-card {
-    width: 180px;
-    height: 220px;
-    background-color: yellow;
+.container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 100px 0 100px;
+    justify-content: space-around;
+}
+
+.result-card{
+    width: 200px;
+    height: 280px;
+    background-color: whitesmoke;
+    border: solid 1px black;
+    padding: 30px 10px 10px 15px;
+
+    background-image: url(resources/Note.png);
+    background-size: 140% 140%;
+    background-position: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+img.book-img {
+    width: 100px;
+    height: 130px;
+    border: solid 0.5px black;
+}
+
+.paging{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h4.book-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+p, .price {
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+img.before {
+    width: 30px;
+    margin-right: 10px;
+}
+
+img.after {
+    width: 30px;
+    margin-left: 10px;
 }
