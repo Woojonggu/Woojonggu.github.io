@@ -45,8 +45,8 @@ section::-webkit-scrollbar {
     padding: 10px;
 }
 
-.projects div.backend, 
-.projects div.frontend 
+.projects div.backend,
+.projects div.frontend
 {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +87,9 @@ hr {
     display: none;
 }
 
+.project-img {
+    height: 60%;
+}
 
 .projects article:hover {
     border-bottom: solid 2px #f797c7;

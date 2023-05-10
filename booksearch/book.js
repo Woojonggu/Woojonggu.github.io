@@ -77,17 +77,17 @@ function searchRequest(query, page) {
         // Math.ceil = 올림 (1.007) => 2
         let pageCount = Math.ceil(count / pagesize);
 
-        pageContent += '<button type="button" ';
+        pageContent += '<img ';
         if (page > 1) {
             pageContent += 'class = "before"';
-            pageContent += 'value=">"';
+            pageContent += 'src="resources/images/left.png"';
         }
         pageContent += '>';
         pageContent += '<span>' + page + ' / ' + pageCount + '</span>';
-        pageContent += '<button type="button" ';
+        pageContent += '<img ';
         if(response.meta.is_end === false){
             pageContent += 'class = "after"';
-            pageContent += 'value=">"';
+            pageContent += 'src="resources/right_arrow.png"';
         }
         pageContent += '>';
         $(".paging").append(pageContent);
