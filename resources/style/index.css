@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    color: grey;
+    /* text-decoration: none; */
+}
+
+::selection {
+    background-color: #FBFFB1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 75vh;
+
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 200px 3fr 1fr;
+    gap: 10px;
+}
+
+section {
+    overflow-y: scroll;
+}
+
+section::-webkit-scrollbar {
+    display: none;
+}
+
+.profile>img {
+    width: 90%;
+    padding: 10px;
+}
+
+.projects div.backend, 
+.projects div.frontend 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+hr {
+    width: 85%;
+    margin: 40px 0;
+    border: dashed 1px whitesmoke;
+}
+
+.interests {
+    gap: 10px;
+}
+
+.projects article {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.projects article>h3,
+.projects article>h6,
+.projects article>div,
+.projects article>span {
+    width: 100%;
+    height: 25px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.projects article>h3::-webkit-scrollbar,
+.projects article>h6::-webkit-scrollbar,
+.projects article>div::-webkit-scrollbar,
+.projects article>span::-webkit-scrollbar {
+    display: none;
+}
+
+.project-img {
+    height: 60%;
+    filter: grayscale(1);
+    background-size: cover;
+    background-color: lightgrey;
+}
+
+.projects article:hover {
+    border-bottom: solid 2px #f797c7;
+}
+
+.projects article:hover .project-img {
+    filter: grayscale(0);
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+}
+
+.skills>span {
+    color: whitesmoke;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 3px;
+    background-color: lightgrey;
+    white-space: nowrap;
+}
+
+.skills>span:hover {
+    background-color: #f797c7;
+}
+
+.description {
+    color: grey;
+}
+
+.period {
+    color: lightgrey;
+    font-size: 0.8em;
+}
+
+.interests>article {
+    height: 20vh;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.likes-img {
+    height: 85%;
+    filter: grayscale(1);
+    background-size: cover;
+    background-color: lightgrey;
+}
+
+.interests>article:hover .likes-img {
+    filter: grayscale(0);
+}
+
+.interests>article>h6 {
+    color: grey;
+    background-color: lightgrey;
+}
+
+.interests>article:hover>h6 {
+    background-color: #FBFFB1;
+}
+
+.interests>article>h6::selection {
+    background-color: #f797c7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: solid 3px whitesmoke;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header.mobile {
+    display: none;
+}
+
+header>.tag {
+    display: none;
+    color: whitesmoke;
+    padding: 0 5px;
+    background-color: #f797c7;
+}
+
+h4 {
+    padding: 10px 0;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100vw;
+    height: 150px;
+    background-color: whitesmoke;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+footer ul {
+    color: grey;
+    list-style: none;
+}
+
+address {
+    color: lightgrey;
+    text-align: center;
+}
+
+@media screen and (max-width : 760px) {
+
+    hr {
+        width: 100%;
+    }
+
+    header.mobile {
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        width: 90%;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    header.web {
+        display: none;
+    }
+
+    .container {
+        padding-top: 100px;
+    }
+
+    .container,
+    .contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .profile>img {
+        display: none;
+    }
+
+    .projects {
+        order: -1;
+    }
+
+    .projects article,
+    .interests>article {
+        width: 85vw;
+        height: 70vw;
+    }
+}
