@@ -4,49 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="book.css">
-    <!-- goole cdn jquery 2.x 스니펫-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <title>Book Search</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-<h1>Book Search</h1>
-<form class="search-box">
-    <input class="query" type="text" placeholder="검색할 책 제목 입력">
-    <!-- 폼 태그 안에 버튼이 하나면 디폴트가 submit임 -->
-    <button id="search">
-        <img src="https://em-content.zobj.net/thumbs/240/toss-face/342/magnifying-glass-tilted-left_1f50d.png" >
-    </button>
-</form>
-<div class="container">
-    <div class="result-card">
-        <img class="book-img" src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F965212%3Ftimestamp%3D20220101150538">
-        <h4 class="book-title">도서 제목</h4>
-        <span class="price">10000원</span>
-        <p class="book-info">
-            <span class="author">저자</span>|<span class="publisher">출판사</span>
-        </p>
-    </div>
-
-    <div class="result-card">
-
-        <img class="book-img">
-
-        <h4 class="book-title">도서 제목</h4>
-
-        <p class="book-description">도서상세정보</p>
-
-        <span class="price">10000원</span>
-
-        <p class="book-info">
-
-            <span class="author">저자</span>|<span class="publisher">출판사</span>
-
-        </p>
+    <h1>Book Search</h1>
+    <form class="search-box">
+        <input class ="query" type="text">
+        <input type="submit" value="search" onclick="searchRequest(query)" placeholder = "검색할 책 제목 입력" autofocus>
+    </form>
+    <div class="container">
 
     </div>
 
-</div>
-<script type="text/javascript" src="book.js"></script>
+
+    <script type = "text/javascript" src="book.js"></script>
 </body>
 </html>
