@@ -80,14 +80,14 @@ function searchRequest(query, page) {
         pageContent += '<img ';
         if (page > 1) {
             pageContent += 'class = "before"';
-            pageContent += 'src="resources/images/left.png"';
+            pageContent += 'src="resources/images/4141.jpg"';
         }
         pageContent += '>';
         pageContent += '<span>' + page + ' / ' + pageCount + '</span>';
         pageContent += '<img ';
         if(response.meta.is_end === false){
             pageContent += 'class = "after"';
-            pageContent += 'src="resources/right_arrow.png"';
+            pageContent += 'src="resources/left.png"';
         }
         pageContent += '>';
         $(".paging").append(pageContent);
