@@ -213,9 +213,14 @@ address {
     color: lightgrey;
     text-align: center;
 }
-img {
+.img {
     max-width: 100%;
     height: auto;
+}
+.console{
+    max-width: 70%;
+    height: auto;
+    margin-left: 30px;
 }
 
 
